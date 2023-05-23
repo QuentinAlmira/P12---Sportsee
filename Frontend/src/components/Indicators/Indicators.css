@@ -1,0 +1,45 @@
+.indicators_icons{
+    height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+
+.calories{
+    display: flex;
+    background-color: #fbfbfb;
+}
+
+.calories_infos{
+
+}
+
+.calories{
+    display: flex;
+    background-color: #fbfbfb;
+    align-items: center;
+    justify-content: space-around
+}
+
+.protein{
+    display: flex;
+    background-color: #fbfbfb;
+    align-items: center;
+    justify-content: space-around
+}
+
+.carbs{
+    display: flex;
+    background-color: #fbfbfb;
+    align-items: center;
+    justify-content: space-around
+}
+
+.fat{
+    display: flex;
+    background-color: #fbfbfb;
+    align-items: center;
+    justify-content: space-around
+}
+

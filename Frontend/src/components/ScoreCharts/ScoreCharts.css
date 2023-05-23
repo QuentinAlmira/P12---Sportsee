@@ -1,0 +1,29 @@
+.Score-chart{
+    width: 30%;
+    position: relative;
+    height: 250px;
+    background-color: #6e6a6a;
+    ;
+    ;
+    border-radius: 10px;
+}
+
+.Average-message{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    bottom:25%;
+    right: 25%;
+    left: 25%;
+    top: 25%;
+    color:#74798C;
+    z-index: 50;
+
+}
+
+.Average-message_score{
+    font-size: 1.6em;
+    font-weight: bolder;
+}

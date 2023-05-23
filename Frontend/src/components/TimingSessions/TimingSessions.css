@@ -1,0 +1,22 @@
+.AverageSessions-chart{
+    width: 30%;
+    position: relative;
+    height: 250px;
+    background-color: #FF0000;
+    ;
+    ;
+    border-radius: 10px;
+}
+
+.AverageSessions-chart_text{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    right: 25%;
+    left: 5%;
+    top: 5%;
+    color:white;
+    /* z-index: 50; */
+}

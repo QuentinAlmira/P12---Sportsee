@@ -1,0 +1,14 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.header_component{
+    width: 100%;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+ }
