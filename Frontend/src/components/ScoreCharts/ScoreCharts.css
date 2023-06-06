@@ -1,8 +1,8 @@
 .Score-chart{
     width: 30%;
     position: relative;
-    height: 250px;
-    background-color: #6e6a6a;
+    height: 200px;
+    background-color: #fbfbfb;
     ;
     ;
     border-radius: 10px;
@@ -26,4 +26,14 @@
 .Average-message_score{
     font-size: 1.6em;
     font-weight: bolder;
+}
+
+
+.Average-message_texte{
+    display: flex;
+    text-align: center;
+}
+.Average-message_texte p{
+ 
+
 }

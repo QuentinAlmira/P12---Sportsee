@@ -50,8 +50,9 @@ const StrenghtsActivities = () => {
 
       return (
         <div className='performance-charts'>
-        <ResponsiveContainer width="100%" height={250}>
-        <RadarChart  data={dataPerf} cx='50%' cy='50%' outerRadius='70%' >
+        <ResponsiveContainer width="100%" height={200}>
+        <RadarChart  data={dataPerf} cx='50%' cy='50%' outerRadius='65
+        %' >
           <PolarGrid gridType='polygon'/>
           <PolarAngleAxis dataKey="kind" stroke='white' tick={{ fontSize: 10 }}  />
           <PolarRadiusAxis angle={30} domain={[0, 150]} tick={false} />

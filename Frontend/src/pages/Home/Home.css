@@ -1,0 +1,41 @@
+.select_user{
+    margin-left: 30px;
+}
+
+.user{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 26%;
+    margin-left: 30px;
+}
+
+
+
+.user_12{
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.user_12:hover{
+    background: #ff5a5a;
+    scale: 1.1;
+}
+
+
+
+.user_18{
+    border: 1px solid grey;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.user_18:hover{
+    background: #ff5a5a;
+    scale: 1.1;
+}

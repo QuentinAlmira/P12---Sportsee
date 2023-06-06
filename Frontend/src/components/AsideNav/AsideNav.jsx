@@ -9,6 +9,7 @@ import "./AsideNav.css"
 const AsideNav = () => {
   return (
     <div className="AsideNav">
+      <div className="AsideNav_conatainer">
       <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
         <img src={Meditation} alt="Meditation" />
         </NavLink>
@@ -28,7 +29,7 @@ const AsideNav = () => {
         <NavLink to="/" className={(nav) => (nav.isActive ? "nav-active" : "")}>
         <img src={Weight} alt="Weight" />
         </NavLink>
-      
+     </div> 
     </div>
   );
 };

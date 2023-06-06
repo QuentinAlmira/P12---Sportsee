@@ -32,8 +32,8 @@ const Main = () => {
         <div className="content">
         <div className="welcoming_user">
           <div className="welcoming_user_name">
-          <h2>Bonjour </h2>
-          <h2 className="username_firstname">{ data ? data.userInfos.firstName : ""}</h2>
+          <h1>Bonjour </h1>
+          <h1 className="username_firstname">{ data ? data.userInfos.firstName : ""}</h1>
           </div>
           <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
         </div>

@@ -1,3 +1,12 @@
+
+.AsideBarMain{
+    width: 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .AsideBar{
     width: 100%;
     height: 100%;
@@ -6,6 +15,13 @@
     flex-direction: column;
     align-items: center;
 
+}
+
+.AsideNav{
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around
 }
 
 .copyright{

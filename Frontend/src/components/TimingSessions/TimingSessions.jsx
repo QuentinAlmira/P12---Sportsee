@@ -59,7 +59,7 @@ import "./TimingSessions.css"
       return (
         <div className='AverageSessions-chart'>
         <div className='AverageSessions-chart_text' >Durée moyennes des sessions</div>
-        <ResponsiveContainer width="100%" height={250} >
+        <ResponsiveContainer width="100%" height={200} >
         <LineChart data={data}>
           <CartesianGrid stroke='none'/>
              <Line
@@ -71,36 +71,21 @@ import "./TimingSessions.css"
             dot={false}
             activeDot={{ r: 4, strokeWidth: 4, stroke: "white" }}
           />
-          <XAxis dataKey="day" tickLine={false} mirror={true} tick={{stroke: '#FFFFFF', strokeWidth: 0.5, mixBlendMode : "normal", fontSize : "12px"}}/>
+          <XAxis dataKey="day" tickLine={false} mirror={true} tick={{stroke: '#FFFFFF', strokeWidth: 0.5, mixBlendMode : "normal", fontSize : "10px"}} padding={{left : 4, right : 4}}/>
           <YAxis  hide={true} dataKey="sessionLength" padding={{top : 80, bottom : 50}}/>
-          <Tooltip content={<CustomTooltip />} />
+          <Tooltip content={<CustomTooltip />} cursor={{stroke : "rgba(0, 0, 0, 0.1)", strokeWidth : 50}} />
         </LineChart>
         </ResponsiveContainer>
         </div>
       );
   };
 
-  const CustomTooltip = ({ active, payload, label, stroke, y, textAnchor, x }) => {
+  const CustomTooltip = ({ active, payload}) => {
     if (active && payload && payload.length) {
       return (
-        <g className="recharts-layer recharts-polar-angle-axis-tick">
-           <div className="custom-tooltip">
-        <p className="label">{`${label} : ${payload[0].value}`}</p>
-        <p className="desc">Anything you want can be displayed here.</p>
-      </div>
-        <text
-          stroke={stroke}
-          y={y}
-          fontSize="0.75rem"
-          fontWeight="500"
-          className="recharts-text recharts-polar-angle-axis-tick-value"
-          textAnchor={textAnchor}
-        >
-          <tspan x={x} style={{ fill: "black" }}>
-            {payload?.value}
-          </tspan>
-        </text>
-      </g>
+        <div className="custom-tooltip-duration">
+          <p className="duration-label">{`${payload[0].value} min`}</p>
+        </div>
       );
     }
   

@@ -37,10 +37,11 @@ const ScoreCharts = () => {
       <div className="Score-chart">
         <div className="Average-message">
           <div className='Average-message_score'>{score*100}%</div>
-          <div className='Average-message_texte'>de votre objectif</div>
+          <div className='Average-message_texte'> de votre objectif
+             </div>
           </div>
           
-        <ResponsiveContainer width="100%" height={250}>
+        <ResponsiveContainer width="100%" height={200}>
         <PieChart >
           <Pie
             data={texte}
@@ -57,7 +58,7 @@ const ScoreCharts = () => {
           <Pie
             data={test}
             innerRadius={0}
-            outerRadius={76}
+            outerRadius={20}
             dataKey="value"
             startAngle={90}
             endAngle={450}
