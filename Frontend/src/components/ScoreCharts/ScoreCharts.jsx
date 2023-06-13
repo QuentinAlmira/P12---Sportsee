@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Cell, LabelList, Pie, PieChart, ResponsiveContainer } from "recharts";
+import { Pie, PieChart, ResponsiveContainer } from "recharts";
 import {UsermainInfo} from "../../Provider/Store";
 import "./ScoreCharts.css";
 import {getScore} from "../../pages/Models/getScore";
-import {Container, Title, Text, Score} from "../ScoreCharts/ScoreChartsStyle"
+
 
 const ScoreCharts = () => {
     const [data, setData] = useState([]);

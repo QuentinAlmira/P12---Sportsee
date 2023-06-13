@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
  import {getUserInfos, getUserActivity, getUserAverage, getUserPerformance} from "../Services/DatasMocked";
- //import {getUserInfos, getUserActivity, getUserAverage, getUserPerformance} from "../Services/api";
+//  import {getUserInfos, getUserActivity, getUserAverage, getUserPerformance} from "../Services/api";
 
 
 export const UsermainInfo = async (id) => {
