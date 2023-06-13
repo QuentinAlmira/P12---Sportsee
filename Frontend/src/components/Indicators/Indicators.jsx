@@ -7,8 +7,7 @@ import "./Indicators.css";
 import { UsermainInfo } from "../../Provider/Store";
 import { useParams } from "react-router-dom";
 
-const Indicators = ({ caloriesCount,  proteinCount, carbsCount, fatCount} ) => {
-
+const Indicators = ({ caloriesCount, proteinCount, carbsCount, fatCount }) => {
   const [data, setData] = useState([]);
   const { id } = useParams();
 
@@ -18,42 +17,42 @@ const Indicators = ({ caloriesCount,  proteinCount, carbsCount, fatCount} ) => {
       setData([data]);
     }
     getdataload();
-  }, []);
+  }, [id]);
 
   return (
     <div className="indicators_icons">
-            <div className="calories">
-              <img src={Calories} alt="Calories" />
-              <div className="calories_infos">
-                <h4>{caloriesCount}Kcal</h4>
-                <p>Calories</p>
-              </div>
-            </div>
+      <div className="calories">
+        <img src={Calories} alt="Calories" />
+        <div className="calories_infos">
+          <h4>{caloriesCount}Kcal</h4>
+          <p>Calories</p>
+        </div>
+      </div>
 
-            <div className="protein">
-              <img src={Protein} alt="Protein" />
-              <div className="protein_infos">
-                <h4>{proteinCount}g</h4>
-                <p>Protéines</p>
-              </div>
-            </div>
+      <div className="protein">
+        <img src={Protein} alt="Protein" />
+        <div className="protein_infos">
+          <h4>{proteinCount}g</h4>
+          <p>Protéines</p>
+        </div>
+      </div>
 
-            <div className="carbs">
-              <img src={Carbs} alt="carbs" />
-              <div className="carbs_infos">
-                <h4>{carbsCount}g</h4>
-                <p>Glucides</p>
-              </div>
-            </div>
+      <div className="carbs">
+        <img src={Carbs} alt="carbs" />
+        <div className="carbs_infos">
+          <h4>{carbsCount}g</h4>
+          <p>Glucides</p>
+        </div>
+      </div>
 
-            <div className="fat">
-              <img src={Fat} alt="fat" />
-              <div className="fat_infos">
-                <h4>{fatCount}g</h4>
-                <p>Lipides</p>
-              </div>
-            </div>
-          </div>
+      <div className="fat">
+        <img src={Fat} alt="fat" />
+        <div className="fat_infos">
+          <h4>{fatCount}g</h4>
+          <p>Lipides</p>
+        </div>
+      </div>
+    </div>
   );
 };
 

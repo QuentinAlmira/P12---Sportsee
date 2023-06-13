@@ -19,53 +19,54 @@ const Main = () => {
       setData(data);
     }
     getdataload();
-  }, null);
+  }, [id]);
 
-  if(data)
-
-  return (
-    <div className="main">
-      <div className="AsideBarMain">
-        <AsideBar />
-      </div>
-      <div className="main_content">
-        <div className="content">
-        <div className="welcoming_user">
-          <div className="welcoming_user_name">
-          <h1>Bonjour </h1>
-          <h1 className="username_firstname">{ data ? data.userInfos.firstName : ""}</h1>
-          </div>
-          <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
+  if (data)
+    return (
+      <div className="main">
+        <div className="AsideBarMain">
+          <AsideBar />
         </div>
-        <div className="infographie_user">
-          <div className="ChartsMain">
-            <div className="DailyChart">
-              <DailyActivities />
+        <div className="main_content">
+          <div className="content">
+            <div className="welcoming_user">
+              <div className="welcoming_user_name">
+                <h1>Bonjour </h1>
+                <h1 className="username_firstname">
+                  {data ? data.userInfos.firstName : ""}
+                </h1>
+              </div>
+              <p>Félicitation ! Vous avez explosé vos objectifs hier 👏</p>
             </div>
-            <div className="secondary_charts">
-              <TimingSessions />
-              <StrenghtsActivities />
-              <ScoreCharts />
+            <div className="infographie_user">
+              <div className="ChartsMain">
+                <div className="DailyChart">
+                  <DailyActivities />
+                </div>
+                <div className="secondary_charts">
+                  <TimingSessions />
+                  <StrenghtsActivities />
+                  <ScoreCharts />
+                </div>
+              </div>
+              <div className="Indicators">
+                {data ? (
+                  <Indicators
+                    key={data.id}
+                    caloriesCount={data.keyData.calorieCount}
+                    proteinCount={data.keyData.proteinCount}
+                    carbsCount={data.keyData.carbohydrateCount}
+                    fatCount={data.keyData.lipidCount}
+                  />
+                ) : (
+                  <> </>
+                )}
+              </div>
             </div>
           </div>
-          <div className="Indicators">
-            {
-            (data)?
-                <Indicators
-                  key={data.id}
-                  caloriesCount={data.keyData.calorieCount}
-                  proteinCount={data.keyData.proteinCount}
-                  carbsCount={data.keyData.carbohydrateCount}
-                  fatCount={data.keyData.lipidCount}
-                /> : <> </>
-            
-        }
-          </div>
-        </div>
         </div>
       </div>
-    </div>
-  );
+    );
 };
 
 // const Username = styled.div`

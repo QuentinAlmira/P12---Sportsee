@@ -1,6 +1,6 @@
 import React from "react";
 import LogoSportsee from "../../assets/img/logo.png";
-import "./Logo.css"
+import "./Logo.css";
 
 const Logo = () => {
   return (

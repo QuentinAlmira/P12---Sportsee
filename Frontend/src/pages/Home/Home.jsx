@@ -8,14 +8,12 @@ const Home = () => {
     <div>
       <Header />
       <div className="select_user">
-      <h2>Selectionner un utilisateur</h2>
+        <h2>Selectionner un utilisateur</h2>
       </div>
-    
 
       <div className="user">
         <NavLink to="user/12">
-          <div className="user_12">
-            User 12 - Karl</div>
+          <div className="user_12">User 12 - Karl</div>
         </NavLink>
         <NavLink to="user/18">
           <div className="user_18">User 18 - Cecilia</div>

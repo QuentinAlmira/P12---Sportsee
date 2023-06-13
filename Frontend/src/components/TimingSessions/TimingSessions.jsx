@@ -43,18 +43,18 @@ const TimingSessions = () => {
       setData(formatData);
     }
     getdataload();
-  }, []);
+  }, [id]);
 
   return (
     <div className="AverageSessions-chart">
       <div className="AverageSessions-chart_text">
         Durée moyennes des sessions
       </div>
-      <ResponsiveContainer width="100%" height={200}>
+      <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data}>
           <CartesianGrid stroke="none" />
           <Line
-            type="monotone"
+            type="natural"
             dataKey="sessionLength"
             stroke="white
             "
@@ -69,14 +69,13 @@ const TimingSessions = () => {
             tick={{
               stroke: "#FFFFFF",
               strokeWidth: 0.5,
-              mixBlendMode: "normal",
               fontSize: "10px",
             }}
-            padding={{ left: 4, right: 4 }}
           />
           <YAxis
             hide={true}
             dataKey="sessionLength"
+            domain={[0, "dataMax + 0"]}
             padding={{ top: 80, bottom: 50 }}
           />
           <Tooltip
