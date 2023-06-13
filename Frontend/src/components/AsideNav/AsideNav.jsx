@@ -15,7 +15,7 @@ const AsideNav = () => {
         </NavLink>
   
         <NavLink
-          to="/about"
+          to="/"
           className={(nav) => (nav.isActive ? "nav-active" : "")}
         >
           <img src={Swiming} alt="Swiming" />

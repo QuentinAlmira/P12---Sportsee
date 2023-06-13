@@ -23,11 +23,7 @@ const DailyActivities = () => {
 
 	if (data.length === 0) return null;
 
-  console.log(data);
-
-
-
-  
+ 
   return (
     <><Head>
       <Title>
@@ -122,8 +118,8 @@ function CustomTooltip({active, payload}) {
   if (active){
   return (
       <Container>
-          <Text>{payload[0].value}kg</Text>
-          <Text>{payload[1].value}Kcal</Text>
+          <Text>{payload[0].value}Kcal</Text>
+          <Text>{payload[1].value}Kg</Text>
       </Container>
   
    );
